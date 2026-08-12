@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Stories — Getting To Know Each Other</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-bar" id="readingProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand font-serif fw-bold" href="#home">Two Stories</a>
+            
+            <div class="d-flex align-items-center gap-2">
+                <!-- Dark Mode Toggle Button -->
+                <button class="btn btn-sm rounded-circle theme-toggle-btn d-lg-none" id="themeToggleMobile" aria-label="Toggle Theme">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3 py-3 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#her-story">Her Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#little-things">Little Things</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#family">Family</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#passion">Passion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#values">Values</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dreams">Dreams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#questions">Questions</a></li>
+                    <li class="nav-item ms-lg-2 d-none d-lg-block">
+                        <button class="btn btn-sm rounded-circle theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-stars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="container text-center position-relative z-1">
+            <p class="text-muted-custom tracking-wider mb-2 font-serif fst-italic">Silvi × Aji</p>
+            <h1 class="display-4 font-serif fw-bold mb-3 typing-headline">“Not a Love Story Yet.”</h1>
+            <p class="lead text-muted-custom mb-4">“Just two people getting to know each other.”</p>
+            <p class="small text-muted-custom mb-5 max-w-500 mx-auto">“Because every meaningful connection starts with a simple conversation.”</p>
+            <a href="#introduction" class="btn btn-custom-primary px-4 py-2 rounded-pill shadow-sm">Start Our Story <i class="bi bi-arrow-down ms-1"></i></a>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section id="introduction" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 custom-card p-4 p-md-5 text-center shadow-subtle">
+                        <h2 class="font-serif mb-4">“Before We Know Where This Goes…”</h2>
+                        <p class="text-muted-custom mb-4 line-height-relaxed">
+                            “Kita tidak tahu akan sampai di mana perjalanan ini. Tidak perlu terburu-buru menentukan akhirnya. Untuk sekarang, cukup saling mengenal, saling memahami, dan memberikan waktu untuk menunjukkan siapa kita sebenarnya.”
+                        </p>
+                        <blockquote class="blockquote font-serif fst-italic text-accent m-0">
+                            “Pelan-pelan saja. Tidak perlu terburu-buru.”
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE — SILVI -->
+    <section id="her-story" class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Meet Silvi”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-lg-4 text-center">
+                    <div class="profile-img-container mx-auto shadow-subtle mb-3">
+                        <img src="assets/images/silvi.png" alt="Silvi" class="img-fluid rounded-4 object-fit-cover w-100 h-100" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'350\' viewBox=\'0 0 300 350\'%3E%3Crect fill=\'%23EDE3D5\' width=\'300\' height=\'350\'/%3E%3Ctext fill=\'%238B7A6A\' font-family=\'sans-serif\' font-size=\'18\' dy=\'10.5\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\'%3EHer Story%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 custom-card p-4 shadow-subtle">
+                        <ul class="list-unstyled mb-4 profile-list">
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Nama:</strong> <span>Silvi</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Jenis Kelamin:</strong> <span>Perempuan</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Usia:</strong> <span>24 Tahun</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Hobi:</strong> <span>Olahraga, Masak, Traveling, & Nyanyi</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Domisili:</strong> <span>Lampung</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Suku:</strong> <span>Jawa & Sulawesi</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Status:</strong> <span>Single</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Pendidikan:</strong> <span>S1</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Pekerjaan:</strong> <span>Administrasi</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between"><strong>Tanggal Lahir:</strong> <span>22 Juni</span></li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#little-things" class="btn btn-outline-custom rounded-pill px-4">Discover Her Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LITTLE THINGS SHE LIKES -->
+    <section id="little-things" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Little Things About Her”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 text-center shadow-subtle hover-scale">
+                        <div class="icon-box mx-auto mb-3 text-accent"><i class="bi bi-tree fs-2"></i></div>
+                        <h5 class="font-serif mb-2">Nature</h5>
+                        <p class="text-muted-custom small m-0">“Jalan-jalan ke alam”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 text-center shadow-subtle hover-scale">
+                        <div class="icon-box mx-auto mb-3 text-accent"><i class="bi bi-chat-heart fs-2"></i></div>
+                        <h5 class="font-serif mb-2">Conversation</h5>
+                        <p class="text-muted-custom small m-0">“Ngobrol”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 text-center shadow-subtle hover-scale">
+                        <div class="icon-box mx-auto mb-3 text-accent"><i class="bi bi-palette fs-2"></i></div>
+                        <h5 class="font-serif mb-2">Soft Colors</h5>
+                        <p class="text-muted-custom small m-0">“Ivory, coksu & pastel”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 text-center shadow-subtle hover-scale">
+                        <div class="icon-box mx-auto mb-3 text-accent"><i class="bi bi-shield-check fs-2"></i></div>
+                        <h5 class="font-serif mb-2">Honesty</h5>
+                        <p class="text-muted-custom small m-0">“Tidak suka kebohongan”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIRTHDAY -->
+    <section class="py-4 bg-section-alt text-center">
+        <div class="container py-3">
+            <div class="calendar-card mx-auto p-4 custom-card border-0 shadow-subtle max-w-300">
+                <div class="text-uppercase small tracking-wider text-muted-custom mb-1">A Little Date to Remember</div>
+                <div class="display-3 font-serif fw-bold text-accent">22</div>
+                <div class="h5 font-serif text-muted-custom mb-0">June</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER FAMILY -->
+    <section id="family" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Family Means Something”</h2>
+                <p class="text-muted-custom small max-w-500 mx-auto mt-2">Silvi adalah anak kedua dari dua bersaudara. Kakaknya sudah menikah dan ikut suaminya berdinas ke luar kota. Silvi cukup dekat dengan orang tuanya.</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center mb-4">
+                <div class="col-md-6">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box-sm me-3 text-accent"><i class="bi bi-heart fs-4"></i></div>
+                            <h4 class="font-serif m-0">MOM</h4>
+                        </div>
+                        <p class="text-muted-custom m-0">“Seperti teman, pendengar yang baik, sekaligus sosok yang tegas.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box-sm me-3 text-accent"><i class="bi bi-shield fs-4"></i></div>
+                            <h4 class="font-serif m-0">DAD</h4>
+                        </div>
+                        <p class="text-muted-custom m-0">“Tipikal ayah yang tegas dan tidak banyak bicara, tetapi perhatian melalui kejutan-kejutan kecil.”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <blockquote class="blockquote font-serif fst-italic text-muted-custom">
+                    “Sometimes the quietest love is the one you remember the most.”
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER PASSION -->
+    <section id="passion" class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Something She Loves”</h2>
+                <p class="text-muted-custom small max-w-600 mx-auto mt-2">“Dari cerita tentang alat laboratorium, sampel, pengolahan data, hingga penelitian pangan, terlihat bahwa dunia pangan bukan sekadar bidang kuliah baginya, tetapi sesuatu yang memang dia nikmati.”</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-2">
+                    <div class="card border-0 custom-card p-3 text-center h-100 shadow-subtle">
+                        <i class="bi bi-search text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-0">Food Analysis</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="card border-0 custom-card p-3 text-center h-100 shadow-subtle">
+                        <i class="bi bi-gear text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-0">Food Processing</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="card border-0 custom-card p-3 text-center h-100 shadow-subtle">
+                        <i class="bi bi-building text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-0">Laboratory</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="card border-0 custom-card p-3 text-center h-100 shadow-subtle">
+                        <i class="bi bi-bar-chart text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-0">Data Analysis</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="card border-0 custom-card p-3 text-center h-100 shadow-subtle">
+                        <i class="bi bi-lightbulb text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-0">Food Innovation</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER LAB STORY -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="font-serif fw-bold mb-3">“She Misses The Lab”</h2>
+                    <p class="text-muted-custom mb-4">“Sudah sekitar setahun tidak masuk laboratorium, tetapi rasa rindu terhadap alat-alat dan sampel masih ada.”</p>
+                    <div class="card border-0 custom-card p-4 shadow-subtle bg-soft-accent">
+                        <h5 class="font-serif text-accent mb-2">Highlight</h5>
+                        <p class="font-serif fst-italic mb-3">“Rumit, tapi ketika menemukan jawabannya ada rasa bangga tersendiri.”</p>
+                        <hr class="opacity-25">
+                        <h6 class="font-serif text-muted-custom mb-1">Favorite Part</h6>
+                        <p class="small text-muted-custom m-0">“Analisis kandungan dan pengolahan data.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD RESEARCH -->
+    <section class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“A Little Piece of Her Research”</h2>
+                <p class="text-muted-custom small max-w-600 mx-auto mt-2">“Dalam perjalanan kuliahnya, Silvi pernah mengambil daun kelor sebagai subjek penelitian. Daun kelor diolah menjadi tepung kemudian digunakan dalam produk pangan melalui proses fortifikasi.”</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center mb-4">
+                <div class="col-md-4">
+                    <div class="card border-0 custom-card p-4 text-center h-100 shadow-subtle">
+                        <i class="bi bi-cookie text-accent fs-2 mb-2"></i>
+                        <h5 class="font-serif mb-2">Cookies</h5>
+                        <span class="badge bg-custom-accent text-dark-custom mx-auto mb-2">Paling Diminati</span>
+                        <p class="small text-muted-custom m-0">Cookies menjadi produk yang paling banyak diminati.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 custom-card p-4 text-center h-100 shadow-subtle">
+                        <i class="bi bi-cake text-accent fs-2 mb-2"></i>
+                        <h5 class="font-serif mb-2">Brownies</h5>
+                        <p class="small text-muted-custom m-0">Hasil olahan fortifikasi tepung daun kelor berkualitas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 custom-card p-4 text-center h-100 shadow-subtle">
+                        <i class="bi bi-cup-hot text-accent fs-2 mb-2"></i>
+                        <h5 class="font-serif mb-2">Muffin</h5>
+                        <p class="small text-muted-custom m-0">Bagian dari variasi produk pangan penelitian.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="small text-muted-custom fst-italic">“Bahkan sepupunya yang tidak suka sayur menyukai cookies tersebut dan selalu menanyakannya setiap Lebaran.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER VALUES -->
+    <section id="values" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“What Matters to Her?”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <h5 class="font-serif text-accent mb-2">EMOTIONAL MATURITY</h5>
+                        <p class="text-muted-custom small m-0">“Bisa mengelola emosi pribadi dan tidak tempramental.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <h5 class="font-serif text-accent mb-2">STABILITY</h5>
+                        <p class="text-muted-custom small m-0">“Memiliki pekerjaan dan berusaha membangun kehidupan yang stabil.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <h5 class="font-serif text-accent mb-2">COMMUNICATION</h5>
+                        <p class="text-muted-custom small m-0">“Terbuka dan mampu membicarakan sesuatu dengan baik.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <h5 class="font-serif text-accent mb-2">TRUST</h5>
+                        <p class="text-muted-custom small m-0">“Kepercayaan adalah sesuatu yang harus dijaga.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle">
+                        <h5 class="font-serif text-accent mb-2">FAMILY</h5>
+                        <p class="text-muted-custom small m-0">“Menghargai keluarga dan ingin memiliki hubungan yang dekat dengan pasangan serta anak-anak.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER VIEW OF RELATIONSHIP -->
+    <section class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="font-serif fw-bold mb-4">“She Wants a Relationship Where…”</h2>
+                    <blockquote class="blockquote font-serif fst-italic text-accent mb-3">
+                        “Mah mau cerita, hari ini aku…”
+                    </blockquote>
+                    <blockquote class="blockquote font-serif fst-italic text-accent mb-4">
+                        “Yang tau nggak di kerjaan ku ada sesuatu yang kocak.”
+                    </blockquote>
+                    <p class="text-muted-custom mb-3">“Baginya, pasangan dan anak bukan hanya seseorang yang tinggal bersama, tetapi juga teman untuk bercerita.”</p>
+                    <p class="small text-muted-custom fst-italic">“Hubungan yang nyaman adalah ketika hal kecil sekalipun terasa aman untuk diceritakan.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER IDEAL PARTNER -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“What Kind of Person Does She Hope to Meet?”</h2>
+                <p class="text-muted-custom small max-w-500 mx-auto mt-2">“Not perfect. Just someone who is willing to grow together.”</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-mortarboard text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">SMART</h6>
+                        <p class="text-muted-custom small m-0">“Pintar dan memiliki wawasan.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-book text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">RELIGIOUS</h6>
+                        <p class="text-muted-custom small m-0">“Tahu agama dan memiliki nilai kehidupan yang baik.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-person-check text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">PRESENT</h6>
+                        <p class="text-muted-custom small m-0">“Selalu ada ketika dibutuhkan.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-emoji-smile text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">FUNNY</h6>
+                        <p class="text-muted-custom small m-0">“Pintar melawak dan bisa membuat suasana menjadi ringan.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-heart-pulse text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">HEALTHY</h6>
+                        <p class="text-muted-custom small m-0">“Menjaga kesehatan agar bisa sama-sama menikmati kehidupan sampai tua.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-sliders text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">EMOTIONALLY MATURE</h6>
+                        <p class="text-muted-custom small m-0">“Tidak tempramental dan mampu mengelola emosi.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-suit-heart text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">LOVING</h6>
+                        <p class="text-muted-custom small m-0">“Sayang kepada pasangan.”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <i class="bi bi-people text-accent fs-3 mb-2"></i>
+                        <h6 class="font-serif mb-1">FAMILY ORIENTED</h6>
+                        <p class="text-muted-custom small m-0">“Sayang kepada keluarga.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER MARRIAGE VISION -->
+    <section class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“A Future She Imagines”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="timeline-vertical d-flex flex-column align-items-center gap-2 mb-4">
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Understanding</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Communication</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Trust</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Emotional Maturity</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Financial Responsibility</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Family</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-2 px-4 custom-card shadow-subtle rounded-pill font-serif small">Growing Old Together</div>
+                    </div>
+                    <p class="text-muted-custom small fst-italic">“Pernikahan bukan hanya tentang menemukan seseorang yang disukai, tetapi menemukan seseorang yang siap tumbuh bersama.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY SIDE — AJI -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“And From My Side…”</h2>
+                <p class="text-muted-custom small max-w-600 mx-auto mt-2">“Aku juga sedang berada dalam proses membangun diri. Menyelesaikan pendidikan, mengembangkan kemampuan, membangun karier, dan mempersiapkan diri untuk menjadi seseorang yang mampu bertanggung jawab terhadap keluarga.”</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 mb-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <h5 class="font-serif text-accent mb-2">Education & Career</h5>
+                        <p class="text-muted-custom small m-0">Menyelesaikan kuliah, mengembangkan skill, dan mendapatkan pekerjaan yang stabil.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <h5 class="font-serif text-accent mb-2">Personal Growth</h5>
+                        <p class="text-muted-custom small m-0">Membahagiakan orang tua serta mempersiapkan diri secara mental, ilmu, dan ekonomi.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 custom-card p-4 h-100 shadow-subtle text-center">
+                        <h5 class="font-serif text-accent mb-2">Future</h5>
+                        <p class="text-muted-custom small m-0">Jika waktunya tepat, membangun keluarga yang sehat dan penuh tanggung jawab.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER GOALS -->
+    <section id="dreams" class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Where Does She Want to Go?”</h2>
+                <p class="text-muted-custom small max-w-600 mx-auto mt-2">“Silvi sedang memikirkan karier dan masa depannya. Sebelumnya dia memiliki ketertarikan untuk kembali ke bidang Laboratorium, Analisis pangan, dan Pengolahan pangan.”</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="d-flex flex-column align-items-center gap-2">
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Now</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Career Growth</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Food Laboratory</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Food Analysis</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Professional Growth</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section id="questions" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Questions We Haven’t Answered Yet”</h2>
+                <p class="text-muted-custom small max-w-500 mx-auto mt-2">“Karena mengenal seseorang bukan hanya tentang biodata.”</p>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4" id="questionsContainer">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Little Moments”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="d-flex flex-column align-items-center gap-2">
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">First Conversation</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Getting to Know Each Other</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Sharing Stories</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Deep Talks</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Understanding Each Other</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif">Meeting in Person</div>
+                        <i class="bi bi-arrow-down text-accent"></i>
+                        <div class="p-3 w-100 custom-card shadow-subtle rounded-4 font-serif text-accent">What Comes Next?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMORY SECTION -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Things I Remember From Our Conversations”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-heart me-2"></i>Momis</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-building me-2"></i>Laboratory</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-search me-2"></i>Food Analysis</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-flower1 me-2"></i>Daun Kelor</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-cookie me-2"></i>Cookies</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-cake me-2"></i>Brownies</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-cup-hot me-2"></i>Muffin</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-airplane me-2"></i>Traveling</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-people me-2"></i>Family</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-briefcase me-2"></i>Career</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-tree me-2"></i>Nature</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-chat-heart me-2"></i>Conversation</span></div>
+                <div class="col-auto"><span class="badge custom-badge p-3 font-serif"><i class="bi bi-shield-check me-2"></i>Trust</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEEP TALK -->
+    <section class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="font-serif fw-bold">“Maybe Someday We’ll Talk About…”</h2>
+                <div class="divider mx-auto my-3"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Childhood</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Dreams</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Family</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Career</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Faith</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Fear</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Happiness</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Health</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Marriage</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Personal Growth</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Future</div></div>
+                <div class="col-md-4 col-lg-3"><div class="card border-0 custom-card p-3 text-center shadow-subtle font-serif">Life Goals</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NO RUSH -->
+    <section class="py-5 text-center">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="font-serif fw-bold mb-4">“No Rush.”</h2>
+                    <p class="text-muted-custom mb-2">“Kita tidak perlu tahu sekarang bagaimana cerita ini akan berakhir.”</p>
+                    <p class="text-muted-custom mb-2">“Untuk sekarang, cukup kenal lebih jauh.”</p>
+                    <p class="text-muted-custom mb-2">“Pelan-pelan, tanpa memaksa.”</p>
+                    <p class="text-muted-custom mb-4">“Karena kepercayaan tidak dibangun dalam satu malam.”</p>
+                    <p class="font-serif fst-italic text-accent">— Aji</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL SECTION -->
+    <section class="py-5 bg-section-alt text-center">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="font-serif fw-bold mb-4">“Maybe This Is Just The Beginning.”</h2>
+                    <p class="text-muted-custom mb-2">“Dua orang yang awalnya asing, dua cerita yang berbeda, dan banyak hal yang masih harus dipelajari.”</p>
+                    <p class="text-muted-custom mb-2">“Tidak tahu akan menjadi apa nantinya.”</p>
+                    <p class="text-muted-custom mb-4">“Tapi untuk sekarang… Let’s just keep knowing each other.”</p>
+                    <a href="#home" class="btn btn-custom-primary px-4 py-2 rounded-pill shadow-sm">Back To The Beginning <i class="bi bi-arrow-up ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center border-top">
+        <div class="container">
+            <h5 class="font-serif fw-bold mb-2">Two Stories</h5>
+            <p class="small text-muted-custom mb-2">“Two people. Two stories. One journey of getting to know each other.”</p>
+            <p class="small text-muted-custom m-0">&copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- QUESTION MODAL -->
+    <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-card border-0 shadow">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title font-serif" id="questionModalLabel">Question</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalQuestionText" class="text-muted-custom fw-medium mb-3"></p>
+                    <div class="mb-3">
+                        <label for="modalAnswerInput" class="form-label small text-muted-custom">Jawaban Anda:</label>
+                        <textarea class="form-control custom-textarea shadow-none" id="modalAnswerInput" rows="4" placeholder="Tulis jawaban di sini..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-outline-custom rounded-pill px-3" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-custom-primary rounded-pill px-3" id="saveAnswerBtn"><i class="bi bi-whatsapp me-1"></i> Simpan & Kirim ke WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

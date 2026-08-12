@@ -1,0 +1,290 @@
+/* =========================
+   VARIABLES & THEMING
+========================= */
+:root {
+    --ivory: #F8F4EC;
+    --soft-beige: #EDE3D5;
+    --milk-chocolate: #B89B7A;
+    --warm-brown: #6F5743;
+    --soft-white: #FFFCF7;
+    --pastel-accent: #DCCFC0;
+    --text-dark: #40372F;
+    --text-muted: #8B7A6A;
+    --card-bg: #FFFCF7;
+    --section-alt-bg: #EDE3D5;
+}
+
+[data-theme="dark"] {
+    --ivory: #1E1A17;
+    --soft-beige: #2A2420;
+    --milk-chocolate: #C5A885;
+    --warm-brown: #E3D3C1;
+    --soft-white: #25201C;
+    --pastel-accent: #3A322C;
+    --text-dark: #F5EEED;
+    --text-muted: #B5A495;
+    --card-bg: #25201C;
+    --section-alt-bg: #221D19;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--ivory);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.text-muted-custom {
+    color: var(--text-muted) !important;
+}
+
+.text-accent {
+    color: var(--warm-brown) !important;
+}
+
+.bg-section-alt {
+    background-color: var(--section-alt-bg) !important;
+}
+
+.bg-soft-accent {
+    background-color: var(--soft-beige) !important;
+}
+
+.max-w-500 { max-width: 500px; }
+.max-w-600 { max-width: 600px; }
+.max-w-300 { max-width: 300px; }
+
+.tracking-wider {
+    letter-spacing: 0.15em;
+}
+
+.line-height-relaxed {
+    line-height: 1.8;
+}
+
+/* =========================
+   READING PROGRESS BAR
+========================= */
+.reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--milk-chocolate);
+    width: 0%;
+    z-index: 1050;
+    transition: width 0.1s ease;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(248, 244, 236, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(64, 55, 47, 0.05);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+    background-color: rgba(30, 26, 23, 0.85);
+}
+
+.navbar-brand {
+    color: var(--text-dark) !important;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--milk-chocolate) !important;
+}
+
+.theme-toggle-btn {
+    background-color: var(--soft-beige);
+    color: var(--text-dark);
+    border: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--pastel-accent);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background-color: var(--soft-beige);
+    top: 15%;
+    left: 10%;
+    animation: float 8s ease-in-out infinite alternate;
+}
+
+.shape-2 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--pastel-accent);
+    bottom: 15%;
+    right: 10%;
+    animation: float 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-20px) scale(1.05); }
+}
+
+/* =========================
+   CARDS & COMPONENTS
+========================= */
+.custom-card {
+    background-color: var(--card-bg);
+    border-radius: 20px !important;
+    border: 1px solid rgba(184, 155, 122, 0.15) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.shadow-subtle {
+    box-shadow: 0 10px 30px rgba(64, 55, 47, 0.03);
+}
+
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(64, 55, 47, 0.06);
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: var(--milk-chocolate);
+}
+
+.profile-img-container {
+    width: 240px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: var(--soft-beige);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box-sm {
+    width: 45px;
+    height: 45px;
+    background-color: var(--soft-beige);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-badge {
+    background-color: var(--soft-beige) !important;
+    color: var(--text-dark) !important;
+    border-radius: 15px !important;
+    font-weight: 400;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-custom-primary {
+    background-color: var(--warm-brown);
+    color: var(--soft-white);
+    border: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--milk-chocolate);
+    color: var(--soft-white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+    color: var(--text-dark);
+    border: 1px solid var(--milk-chocolate);
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--milk-chocolate);
+    color: var(--soft-white);
+    border-color: var(--milk-chocolate);
+}
+
+/* =========================
+   MODAL & FORMS
+========================= */
+.custom-textarea {
+    background-color: var(--ivory);
+    border: 1px solid rgba(184, 155, 122, 0.3);
+    border-radius: 12px;
+    color: var(--text-dark);
+}
+
+.custom-textarea:focus {
+    background-color: var(--ivory);
+    border-color: var(--milk-chocolate);
+    color: var(--text-dark);
+    box-shadow: none;
+}
+
+/* =========================
+   ANIMATIONS & RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .profile-img-container {
+        width: 200px;
+        height: 240px;
+    }
+}
