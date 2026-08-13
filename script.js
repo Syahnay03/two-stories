@@ -261,4 +261,65 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    /* ======================================================
+       7. RATING & VOTER SYSTEM (localStorage)
+    ====================================================== */
+    const ratingRange = document.getElementById("ratingRange");
+    const ratingValueDisplay = document.getElementById("ratingValueDisplay");
+    const submitRatingBtn = document.getElementById("submitRatingBtn");
+    const avgRatingDisplay = document.getElementById("avgRatingDisplay");
+    const totalVotersDisplay = document.getElementById("totalVotersDisplay");
+
+    // Update tampilan angka saat slider digeser
+    if (ratingRange && ratingValueDisplay) {
+        ratingRange.addEventListener("input", (e) => {
+            ratingValueDisplay.textContent = e.target.value + "%";
+        });
+    }
+
+    // Fungsi untuk memuat dan menampilkan data rating dari localStorage
+    function updateRatingUI() {
+        const savedRatings = JSON.parse(localStorage.getItem("twoStoriesRatings")) || [];
+        const totalVoters = savedRatings.length;
+
+        if (totalVoters > 0) {
+            const sum = savedRatings.reduce((acc, val) => acc + val, 0);
+            const average = Math.round(sum / totalVoters);
+            if (avgRatingDisplay) avgRatingDisplay.textContent = average + "%";
+            if (totalVotersDisplay) totalVotersDisplay.textContent = totalVoters;
+        } else {
+            if (avgRatingDisplay) avgRatingDisplay.textContent = "Belum ada";
+            if (totalVotersDisplay) totalVotersDisplay.textContent = "0";
+        }
+    }
+
+    updateRatingUI();
+
+    // Aksi saat tombol "Kirim Penilaian" diklik
+    if (submitRatingBtn) {
+        submitRatingBtn.addEventListener("click", () => {
+            const currentVal = parseInt(ratingRange.value);
+            
+            // Ambil data lama atau buat array baru
+            let savedRatings = JSON.parse(localStorage.getItem("twoStoriesRatings")) || [];
+            
+            // Masukkan nilai baru dari penilai
+            savedRatings.push(currentVal);
+            
+            // Simpan kembali ke localStorage
+            localStorage.setItem("twoStoriesRatings", JSON.stringify(savedRatings));
+            
+            // Perbarui tampilan statistik
+            updateRatingUI();
+
+            // Opsional: Kirim juga via WhatsApp jika ingin catatannya masuk ke WA Anda
+            const phoneNumber = "6282161897465";
+            const message = `Halo Aji, aku baru saja memberikan rating untuk website Two Stories sebesar *${currentVal}%*! ✨`;
+            const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            
+            alert("Terima kasih sudah memberikan penilaian! ❤️");
+            window.open(waUrl, "_blank");
+        });
+    }
+
 });

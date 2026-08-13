@@ -690,5 +690,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
+
+<!-- Section Rating Website -->
+<section class="py-5 text-center container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 custom-card p-4 shadow-subtle">
+                <h5 class="font-serif mb-3">Seberapa Berkesan Website Ini? ✨</h5>
+                <p class="text-muted-custom small mb-4">Beri tahu penilaianmu dalam bentuk persentase.</p>
+                
+                <!-- Input Range / Slider Persen -->
+                <div class="mb-3">
+                    <input type="range" class="form-range" id="ratingRange" min="0" max="100" value="80">
+                    <div class="fw-bold text-accent fs-4 mt-2" id="ratingValueDisplay">80%</div>
+                </div>
+
+                <button class="btn btn-custom-primary rounded-pill px-4 py-2 mt-2" id="submitRatingBtn">
+                    <i class="bi bi-heart-fill me-1"></i> Kirim Penilaian
+                </button>
+
+                <!-- Informasi Statistik Rating -->
+                <div class="mt-4 pt-3 border-top border-opacity-10 small text-muted-custom">
+                    Rata-rata Penilaian: <strong id="avgRatingDisplay">0%</strong> 
+                    <span class="mx-2">|</span> 
+                    Sudah dinilai oleh: <strong id="totalVotersDisplay">0</strong> orang
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
